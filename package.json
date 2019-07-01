@@ -1,0 +1,21 @@
+{
+  "name": "automation-macro",
+  "version": "0.0.1",
+  "main": "./build/index.js",
+  "scripts": {
+    "bundle": "webpack",
+    "prestart": "tsc",
+    "start": "node ."
+  },
+  "author": "duanluan",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/ffi": "^0.2.2",
+    "typescript": "^3.5.2"
+  },
+  "dependencies": {
+    "ffi": "^2.3.0",
+    "ref": "^1.3.5",
+    "ref-struct": "^1.1.0"
+  }
+}

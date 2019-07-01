@@ -1,0 +1,24 @@
+{
+  // https://www.tslang.cn/docs/handbook/compiler-options.html
+  "compilerOptions": {
+    // 指定生成哪个模块系统代码。
+    "module": "commonjs",
+    // 在表达式和声明上有隐含的 any 类型时报错。
+    "noImplicitAny": false,
+    // 删除所有注释，除了以 /!* 开头的版权信息。
+    "removeComments": true,
+    // 保留 const 和 enum 声明。
+    "preserveConstEnums": true,
+    // 生成相应的 .map 文件。
+    "sourceMap": true,
+    // 重定向输出目录。
+    "outDir": "./build/"
+  },
+  "include": [
+    "src/**/*"
+  ],
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}
