@@ -10,15 +10,19 @@
     // 保留 const 和 enum 声明。
     "preserveConstEnums": true,
     // 生成相应的 .map 文件。
-    "sourceMap": true,
+    // "sourceMap": true,
     // 重定向输出目录。
-    "outDir": "./build/"
-  },
-  "include": [
-    "src/**/*"
-  ],
-  "exclude": [
-    "node_modules",
-    "build"
-  ]
+    "outDir": "./dist/",
+    // 生成相应的 .d.ts 文件。
+    "declaration": true,
+    // 启用所有严格类型检查选项。
+    "strict": true
+  }
+//,"include": [
+//    "lib/**/*"
+//  ],
+//  "exclude": [
+//    "node_modules",
+//    "dist"
+//  ]
 }

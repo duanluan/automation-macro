@@ -1,16 +1,28 @@
 {
-  "name": "automation-macro",
+  "name": "win-automation-macro",
   "version": "0.0.1",
-  "main": "./build/index.js",
-  "scripts": {
-    "bundle": "webpack",
-    "prestart": "tsc",
-    "start": "node ."
-  },
+  "main": "./dist/index.js",
   "author": "duanluan",
-  "license": "ISC",
+  "homepage": "https://github.com/duanluan/automation-macro",
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:duanluan/automation-macro.git"
+  },
+  "bugs": {
+    "url": "https://github.com/duanluan/automation-macro/issues"
+  },
+  "license": "LGPL-3.0",
+  "keywords": [
+    "typescript"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "test": "npm run-script build && mocha --reporter spec"
+  },
   "devDependencies": {
     "@types/ffi": "^0.2.2",
+    "chai": "^4.2.0",
+    "mocha": "^6.1.4",
     "typescript": "^3.5.2"
   },
   "dependencies": {
