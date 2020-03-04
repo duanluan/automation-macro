@@ -3,6 +3,8 @@ import * as ref from "ref";
 import * as Struct from "ref-struct";
 
 const user32 = ffi.Library("user32", {
+  // // https://docs.microsoft.com/en-us/windows/win32/api/winuser/nf-winuser-getcursorinfo
+  // "GetCursorInfo": ["book", ["pointer"]],
   // https://docs.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-getcursorpos
   "GetCursorPos": ["bool", ["pointer"]]
 });
@@ -19,6 +21,12 @@ const Point = Struct({
  * 光标
  */
 export default class Cursor {
+
+  // // 获取全局光标的句柄
+  // static getCursorInfo(){
+  //   return user32.GetCursorInfo();
+  // }
+
   /**
    * 获取位置
    */

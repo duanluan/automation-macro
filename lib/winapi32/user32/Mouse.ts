@@ -7,6 +7,7 @@ import System from "./System";
 const user32 = ffi.Library("user32", {
   // https://docs.microsoft.com/en-us/windows/desktop/api/winuser/nf-winuser-mouse_event
   "mouse_event": [ref.types.void, [ref.types.ulong, ref.types.ulong, ref.types.ulong, ref.types.ulong, ref.types.ulong]]
+
 });
 
 /**
@@ -351,5 +352,9 @@ export default class Mouse {
    */
   static wheelTiltR(data: number) {
     user32.mouse_event(0x01000, 0, 0, data, 0);
+  }
+
+  static setHook(){
+
   }
 }

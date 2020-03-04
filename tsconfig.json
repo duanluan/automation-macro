@@ -3,6 +3,7 @@
   "compilerOptions": {
     // 指定生成哪个模块系统代码。
     "module": "commonjs",
+    "target": "es5",
     // 在表达式和声明上有隐含的 any 类型时报错。
     "noImplicitAny": false,
     // 删除所有注释，除了以 /!* 开头的版权信息。
@@ -18,11 +19,10 @@
     // 启用所有严格类型检查选项。
     "strict": true
   }
-//,"include": [
-//    "lib/**/*"
-//  ],
-//  "exclude": [
-//    "node_modules",
-//    "dist"
-//  ]
+,"include": [
+    "lib/**/*"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
 }

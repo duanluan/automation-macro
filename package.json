@@ -1,8 +1,9 @@
 {
-  "name": "win-automation-macro",
-  "version": "0.0.1",
-  "main": "./dist/index.js",
+  "name": "windows-automation-macro",
+  "version": "0.0.1-alpha.3",
   "author": "duanluan",
+  "description": "Windows Automation Macro",
+  "main": "./dist/index.js",
   "homepage": "https://github.com/duanluan/automation-macro",
   "repository": {
     "type": "git",
@@ -26,8 +27,8 @@
     "typescript": "^3.5.2"
   },
   "dependencies": {
-    "ffi": "^2.3.0",
-    "ref": "^1.3.5",
-    "ref-struct": "^1.1.0"
+    "ffi": "github:lxe/node-ffi#node-12",
+    "ref": "github:lxe/ref#node-12",
+    "ref-struct": "github:lxe/ref-struct#node-12"
   }
 }
