@@ -12,6 +12,7 @@ describe("系统消息测试", () => {
 
     let callback = () => {
       expect(WinMsg.setHook());
+
       // 通知 Mocha 测试结束
       done()
     };
